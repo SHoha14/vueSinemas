@@ -1,0 +1,130 @@
+@media(max-width:1024px) {
+    .films__wrapper {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .films__card {
+        width: 48%;
+    }
+
+    .collections__card {
+        flex-shrink: 0;
+    }
+
+    .collections__wrapper {
+        column-gap: 30px;
+        overflow-x: scroll;
+    }
+}
+
+
+@media(max-width:768px) {
+    .grid-item:nth-child(2) {
+        grid-row: 3;
+        grid-column: 1/ span 4;
+    }
+
+    .grid-item:nth-child(3),
+    .grid-item:nth-child(4),
+    .grid-item:nth-child(5),
+    .grid-item:nth-child(6) {
+        grid-column: span 2;
+    }
+}
+
+
+@media(max-width:575px) {
+    .footer__content {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .nav__list{
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-end;
+        top: 0;
+        bottom: 0;
+        right: -100%;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        backdrop-filter: blur(15px);
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.52);
+        row-gap: 30px;
+        transition: 0.5s;
+        
+    }
+    .menu{
+        display: block;
+    }
+    .menu:focus+.nav__list{
+        right: 0;
+    }
+}
+@media(max-width:425px){
+    .header{
+        min-height: 500px;
+    }
+    .header__title{
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .films__card{
+        width: 100%;
+    }
+    .premier__img{
+        max-width: 445px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .premier__text{
+        margin-bottom: 15px;
+    }
+    .premier__content{
+        padding-top: 22px;
+        padding-bottom: 40px;
+    }
+    .series__name{
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .series__text{
+display: -webkit-box;
+-webkit-line-clamp: 8;
+-webkit-box-orient:vertical ;
+overflow: hidden;
+    }
+    .grid-item:nth-child(3),
+    .grid-item:nth-child(4),
+    .grid-item:nth-child(5),
+    .grid-item:nth-child(6){
+        grid-column: span 4;
+    }
+}
+@media(max-width:360px){
+    .header__buttons{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .main__button{
+        text-align: center;
+    }
+    .series__text{
+        text-align: justify;
+    }
+    .premier__text{
+        text-align: justify;
+    }
+}
+@media(max-width:320px){
+    .series__name{
+        font-size: 27px;
+    }
+    .footer__text{
+        font-size: 15px;
+    }
+
+}
+
+
